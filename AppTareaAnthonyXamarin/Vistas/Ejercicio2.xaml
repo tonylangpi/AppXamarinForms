@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTareaAnthonyXamarin.Vistas.Ejercicio2">
+    <Grid BackgroundColor="#E5D516">
+        <StackLayout Margin="20">
+            <Image Source="https://i.ibb.co/xgsBrZy/work-tools.png"/>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Placeholder="Codigo de Empleado" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Placeholder="Nombre empleado" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Placeholder="Apellido empleado" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" Placeholder="Salario" x:Name="Salario"/>
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" Placeholder="Años de labor" x:Name="tiempo" />
+            </Frame>
+            <Button Text="VALIDAR" CornerRadius="20" FontSize="Large" BackgroundColor="#C2E56E" x:Name="verificarmonto" Clicked="verificarmonto_Clicked" />
+        </StackLayout>
+         
+    </Grid>
+</ContentPage>

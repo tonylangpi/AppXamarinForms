@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTareaAnthonyXamarin.Vistas.Ejercicio1">
+    <Grid BackgroundColor="#E5D516">
+        <StackLayout Margin="20">
+            <Image Source="https://i.ibb.co/T2kfCcv/paquete.png"/>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Placeholder="Codigo de Producto" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Placeholder="Nombre producto" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" Placeholder="Costo" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" Placeholder="Precio venta" x:Name="Precio" />
+            </Frame>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" Placeholder="Cantidad a vender" x:Name="cantidad"/>
+            </Frame>
+            <Button Text="Calcular" CornerRadius="20" FontSize="Large" BackgroundColor="#C2E56E" x:Name="calcularTotal" Clicked="calcularTotal_Clicked"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Total a pagar"
+                       VerticalOptions="Center"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label Text="0.00"
+                       x:Name="lbltotalpagar"
+                       VerticalOptions="Center"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+            <Button Text="IR AL PAGO" CornerRadius="20" FontSize="Large" BackgroundColor="#C2E56E" x:Name="irPago" Clicked="irPago_Clicked"/>
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>

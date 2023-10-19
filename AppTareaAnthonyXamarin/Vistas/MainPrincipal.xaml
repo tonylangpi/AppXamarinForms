@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTareaAnthonyXamarin.Vistas.MainPrincipal"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Orientation="Vertical" Background="#F3E6B1">
+        <Label Text="ANTHONY LANG EJERCICIOS XAMARIN"  
+               HorizontalOptions="Center" 
+               FontSize="Large" FontAttributes="Bold"/>
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20,40"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout VerticalOptions="Center" Spacing="15">
+                <Image Source="https://www.simplilearn.com/ice9/free_resources_article_thumb/full_stack_banner.jpg" />
+                <Label Text="EJERCICIOS"/>
+                <Button Text="Ejercicio 1" 
+                        TextTransform="None"
+                        FontSize="Medium"
+                        BackgroundColor="#C2E56E "
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        x:Name="btniniciar"
+                        Clicked="btniniciar_Clicked"/>
+                <Button Text="Ejercicio 2" 
+                        TextTransform="None"
+                        FontSize="Medium"
+                        BackgroundColor="#C2E56E"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        x:Name="Ejercicio2"
+                        Clicked="Ejercicio2_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
